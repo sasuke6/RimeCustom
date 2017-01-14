@@ -1,0 +1,17 @@
+patch:
+  menu:
+    page_size: 10
+  schema_list:
+  - schema: luna_pinyin_simp     # 朙月拼音 简化字
+  - schema: luna_pinyin          # 朙月拼音
+  - schema: double_pinyin_flypy   # 小鶴雙拼
+  - schema: wubi_pinyin          # 五笔拼音混合輸入
+  - schema: jyutping             # 粤拼
+  - schema: emoji                # emoji表情
+  key_binder/bindings:
+    - when: paging
+      accept: bracketleft
+      send: Page_Up
+    - when: has_menu
+      accept: bracketright
+      send: Page_Down
